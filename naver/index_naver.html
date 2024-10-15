@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Naver Template · Bootstrap v5.3</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="hamburger" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+    </symbol>
+    <symbol id="pay" viewBox="0 0 16 16">
+      <path
+        d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0" />
+    </symbol>
+    <symbol id="bing" viewBox="0 0 16 16">
+        <path
+          d="M8.35 5.046a.615.615 0 0 0-.54.575c-.009.13-.006.14.289.899.67 1.727.833 2.142.86 2.2q.101.215.277.395c.089.092.148.141.247.208.176.117.262.15.944.351.664.197 1.026.327 1.338.482.405.201.688.43.866.7.128.195.242.544.291.896.02.137.02.44 0 .564-.041.27-.124.495-.252.684-.067.1-.044.084.055-.039.278-.346.562-.938.707-1.475a4.42 4.42 0 0 0-2.14-5.028 70 70 0 0 0-.888-.465l-.53-.277-.353-.184c-.16-.082-.266-.138-.345-.18-.368-.192-.523-.27-.568-.283a1 1 0 0 0-.194-.03z" />
+        <path
+          d="M9.152 11.493a3 3 0 0 0-.135.083 320 320 0 0 0-1.513.934l-.8.496c-.012.01-.587.367-.876.543a1.9 1.9 0 0 1-.732.257c-.12.017-.349.017-.47 0a1.9 1.9 0 0 1-.884-.358 2.5 2.5 0 0 1-.365-.364 1.9 1.9 0 0 1-.34-.76 1 1 0 0 0-.027-.121c-.005-.006.004.092.022.22.018.132.057.324.098.489a4.1 4.1 0 0 0 2.487 2.796c.359.142.72.23 1.114.275.147.016.566.023.72.011a4.1 4.1 0 0 0 1.956-.661l.235-.149.394-.248.258-.163 1.164-.736c.51-.32.663-.433.9-.665.099-.097.248-.262.255-.283.002-.005.028-.046.059-.091a1.64 1.64 0 0 0 .25-.682c.02-.124.02-.427 0-.565a3 3 0 0 0-.213-.758c-.15-.314-.47-.6-.928-.83a2 2 0 0 0-.273-.12c-.006 0-.433.26-.948.58l-1.113.687z" />
+        <path
+          d="m3.004 12.184.03.129c.089.402.245.693.515.963a1.82 1.82 0 0 0 1.312.543c.361 0 .673-.09.994-.287l.472-.29.373-.23V5.334c0-1.537-.003-2.45-.008-2.521a1.82 1.82 0 0 0-.535-1.177c-.097-.096-.18-.16-.427-.33L4.183.24c-.239-.163-.258-.175-.33-.2a.63.63 0 0 0-.842.464c-.009.042-.01.603-.01 3.646l.003 8.035Z" />
+    </symbol>
+    <symbol id="keyboard" viewBox="0 0 16 16">
+      <path
+        d="M0 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm13 .25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25M2.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 8.75v-.5A.25.25 0 0 0 2.75 8zM4 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 5 8.75v-.5A.25.25 0 0 0 4.75 8h-.5a.25.25 0 0 0-.25.25M6.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 7 8.75v-.5A.25.25 0 0 0 6.75 8zM8 8.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 9 8.75v-.5A.25.25 0 0 0 8.75 8h-.5a.25.25 0 0 0-.25.25M13.25 8a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zm-3-2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zm.75 2.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25M11.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25zM9 6.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5A.25.25 0 0 0 9.75 6h-.5a.25.25 0 0 0-.25.25M7.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 8 6.75v-.5A.25.25 0 0 0 7.75 6zM5 6.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 6 6.75v-.5A.25.25 0 0 0 5.75 6h-.5a.25.25 0 0 0-.25.25M2.25 6a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h1.5A.25.25 0 0 0 4 6.75v-.5A.25.25 0 0 0 3.75 6zM2 10.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25M4.25 10a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h5.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25z" /></symbol>
+    <symbol id="search" viewBox="0 0 16 16">
+      <path
+        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+    </symbol>
+    <symbol id="chat" viewBox="0 0 16 16">
+      <path
+        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+      <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+    </symbol>
+    <symbol id="bell" viewBox="0 0 16 16">
+      <path
+        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+    </symbol>
+    <symbol id="bag" viewBox="0 0 16 16">
+      <path
+        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+    </symbol>
+    <symbol id="mail" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75zM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765M16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516zm-8 3.3 5.693-3.162L0 6.873v6.5Z" />
+    </symbol>
+    <symbol id="cafe" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5" />
+      <path
+        d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8" />
+    </symbol>
+    <symbol id="blog" viewBox="0 0 16 16">
+      <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z" />
+    </symbol>
+    <symbol id="shopping" viewBox="0 0 16 16">
+      <path
+        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z" />
+    </symbol>
+    <symbol id="news" viewBox="0 0 16 16">
+      <path
+        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
+      <path
+        d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z" />
+    </symbol>
+    <symbol id="stock" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" />
+    </symbol>
+    <symbol id="realty" viewBox="0 0 16 16">
+      <path
+        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+    </symbol>
+    <symbol id="map" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z" />
+    </symbol>
+    <symbol id="webtoon" viewBox="0 0 16 16">
+      <path
+        d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+    </symbol>
+    <symbol id="czz" viewBox="0 0 16 16">
+      <path
+        d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641z" />
+    </symbol>
+    <symbol id="more" viewBox="0 0 16 16">
+      <path
+        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+    </symbol>
+    <symbol id="left_arrow" viewBox="0 0 16 16">
+      <path
+        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+    </symbol>
+    <symbol id="right_arrow" viewBox="0 0 16 16">
+      <path
+        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+    </symbol>
+  </svg>
+
+  <nav class="navbar navbar-white bg-white">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="icon" width="24" height="24" fill="currentColor">
+            <use xlink:href="#hamburger"></use>
+          </svg>
+        </button>
+
+        <button class="btn" type="button">
+          <svg class="icon" width="24" height="24" fill="currentColor">
+            <use xlink:href="#pay"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="d-flex">
+        <button class="btn me-2" type="button">
+          <svg class="icon" width="24" height="24" fill="currentColor">
+            <use xlink:href="#chat"></use>
+          </svg>
+        </button>
+        <button class="btn me-2" type="button">
+          <svg class="icon" width="24" height="24" fill="currentColor">
+            <use xlink:href="#bell"></use>
+          </svg>
+        </button>
+        <button class="btn" type="button">
+          <svg class="icon" width="24" height="24" fill="currentColor">
+            <use xlink:href="#bag"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <div class="input-group border rounded p-2">
+      <button class="btn" type="button">
+        <svg class="icon" width="24" height="24" fill="currentColor">
+          <use xlink:href="#bing"></use>
+        </svg>
+      </button>
+  
+      <input type="text" class="form-control" placeholder="검색어를 입력 해 주세요." aria-label="Search">
+  
+      <button class="btn" type="button">
+        <svg class="icon" width="24" height="24" fill="currentColor">
+          <use xlink:href="#keyboard"></use>
+        </svg>
+      </button>
+  
+      <button class="btn" type="button">
+        <svg class="icon" width="24" height="24" fill="currentColor">
+          <use xlink:href="#search"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="navbar navbar-expand-lg navbar-white bg-white">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#mail" />
+              </svg>
+              메일
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#cafe" />
+              </svg>
+              카페
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#blog" />
+              </svg>
+              블로그
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#shopping" />
+              </svg>
+              쇼핑
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#news" />
+              </svg>
+              뉴스
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#stock" />
+              </svg>
+              증권
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#realty" />
+              </svg>
+              부동산
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#map" />
+              </svg>
+              지도
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#webtoon" />
+              </svg>
+              웹툰
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#czz" />
+              </svg>
+              치지직
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-gray">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="gray">
+                <use xlink:href="#more" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- ad section -->
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col-md-2 d-none d-lg-block">
+            <svg class="bd-placeholder-img" width="140" height="160" xmlns="http://www.w3.org/2000/svg" role="img"
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                dy=".3em">Thumbnail</text>
+            </svg>
+          </div>
+          <div class="col-md-8 p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary-emphasis">
+              <h5>마인드브릿지</h5>
+            </strong>
+            <strong class="mb-0">
+              <h6>1년 단, 한 번! 네쇼페 특가로 누리는 쇼핑혜택! F/W 시즌템, 지금! 역대급 특가를 확인하세요.</h6>
+            </strong>
+            <h6 class="card-text mb-auto">스토어의 최근 혜택 정보입니다.</h6>
+          </div>
+          <div class="col-md-2 p-4 d-flex flex-column position-static">
+            <a class="btn btn-outline-primary rounded-pill" href="#">바로가기</a>
+          </div>
+        </div>
+
+        <div class="border rounded p-3 mt-3">
+          <nav>
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-link active" href="#">뉴스스탠드</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">언론사편집</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">엔터</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">스포츠</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">경제</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">쇼핑투데이</a></li>
+            </ul>
+          </nav>
+          <div class="mt-2">
+            <span>전체언론사 ▼ </span>
+            <span>연합뉴스 - 용산 "명태군 카톡 속 '오빠'는 대통령 아닌 김여사 친오빠"</span>
+            <span class="float-end">뉴스스탠드 | 뉴스홈</span>
+          </div>
+
+          <table class="table text-center">
+            <tbody>
+              <tr>
+                <td><button class="btn btn-outline-secondary w-100 m-0">머니투데이</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">SBS</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">서울신문</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">노컷뉴스</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">시사IN</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">BLOTER</button></td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-outline-secondary w-100 m-0">헤럴드경제</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">OhmyNews</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">The JoongAng</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">동아일보</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">아시아경제</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">프레시안</button></td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-outline-secondary w-100 m-0">일간스포츠</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">미디어오늘</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">한국경제</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">여성신문</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">신아일보</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">소년한국일보</button></td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-outline-secondary w-100 m-0">디자인정글</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">프라임경제</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">월간중앙</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">이코노미스트</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">매경헬스</button></td>
+                <td><button class="btn btn-outline-secondary w-100 m-0">ELLE</button></td>
+              </tr>
+            </tbody>
+          </table>
+      
+          <div class="text-center mt-3">
+            <button class="btn btn-outline-secondary">
+              <svg class="icon" width="24" height="24" fill="currentColor">
+                <use xlink:href="#left_arrow"></use>
+              </svg>
+            </button>
+            <button class="btn">언론사 더보기 1/4</button>
+            <button class="btn btn-outline-secondary">
+              <svg class="icon" width="24" height="24" fill="currentColor">
+                <use xlink:href="#right_arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+  
+
+      <!-- Login section -->
+      <div class="col-md-4">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static text-center">
+            <h6 class="card-text mb-auto">네이버를 더 안전하고 편리하게 이용하세요</h6>
+            <div class="col p-4 d-flex flex-column position-static">
+              <a class="btn btn-outline-primary rounded-pill" href="#">NAVER 로그인</a>
+            </div>
+            <h6 class="card-text mb-auto">아이디 찾기 | 비밀번호 찾기 | 회원가입</h6>
+          </div>
+        </div>
+
+      <!-- Login section -->
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static text-left">
+            <h3 class="card-text mb-auto">루메나</h3>
+            <div class="row">
+              <div class="col-md-2 d-none d-lg-block border-top">
+                <svg class="bd-placeholder-img" width="140" height="160" xmlns="http://www.w3.org/2000/svg" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" />
+                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                </svg>
+              </div>
+              <h6 class="card-text mb-auto">숲 속 폭포수 같은 BEST 루메나 가습기 할인 중!</h6>
+          
+
+            <div class="col p-4 d-flex flex-column position-static">
+              <a class="btn btn-outline-primary rounded-pill" href="#">더 알아보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <ul class="nav col-md-12 justify-content-center">
+        <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">회사소개</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">인재채용</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">제휴제안</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">이용약관</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">개인정보처리방침</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">청소년보호정책</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">네이버 정책</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">고객센터</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-1 text-body-secondary">NAVER Corp.</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
